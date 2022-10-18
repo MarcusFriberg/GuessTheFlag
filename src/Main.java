@@ -1,5 +1,17 @@
-public class Main {
+import javafx.application.Application;
+import javafx.stage.Stage;
+
+public class Main extends Application {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        launch(args);
+    }
+
+    @Override
+    public void start(Stage primaryStage) throws Exception {
+        primaryStage.setTitle("Guess the flag");
+        primaryStage.setResizable(false);
+        GameView gameView = new GameView(primaryStage);
+        Game game = new Game(gameView);
+        game.startGame();
     }
 }
