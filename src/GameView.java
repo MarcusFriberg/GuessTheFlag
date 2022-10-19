@@ -24,7 +24,7 @@ public class GameView {
     public void present(List<String> shuffledFlags, int correctAnswer, Game game) {
         // Outer VBOX to hold content
         VBox outerVBox = new VBox();
-        outerVBox.setStyle("-fx-background-color: radial-gradient(center 50% 0% , radius 80% , #4040E0, #080840)");
+        outerVBox.setStyle("-fx-background-color: radial-gradient(center 50% 0% , radius 80% , #E00404, #400808)");
         outerVBox.setAlignment(Pos.CENTER);
         outerVBox.setSpacing(20);
 
